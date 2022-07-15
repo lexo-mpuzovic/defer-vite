@@ -1,0 +1,29 @@
+{
+    "name": "lexo/defer-vite",
+    "version": "1.0.0",
+    "description": "Simple Laravel package to add defer attribute to Vite script assets.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miljan Puzović",
+            "email": "mpuzovic@lexo.ch"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LEXO\\DeferVite\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0.2"
+    },
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LEXO\\DeferVite\\Providers\\DeferViteServiceProvider"
+            ]
+        }
+    }
+}
